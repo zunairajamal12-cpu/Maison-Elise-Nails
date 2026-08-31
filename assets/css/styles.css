@@ -237,7 +237,9 @@ textarea:focus-visible {
     width: min(360px, 88vw);
     height: calc(100dvh - var(--header-h));
 
-    background: var(--ivory);
+    background: rgba(247, 243, 238, 0.65);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
 
     padding: 24px 24px 30px;
 
@@ -253,7 +255,7 @@ textarea:focus-visible {
 
     z-index: 2000;
 
-    box-shadow: -15px 0 40px rgba(43, 42, 40, 0.18);
+ box-shadow: -15px 0 40px rgba(43, 42, 40, 0.15);
 
     overflow-y: auto;
     pointer-events: none;
