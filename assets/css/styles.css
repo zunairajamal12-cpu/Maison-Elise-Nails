@@ -851,3 +851,58 @@ textarea:focus-visible {
 @media (min-width: 1200px) {
   .container { padding-left: 26px; padding-right: 26px; }
 }
+/* ---------- Mobile overflow fix ---------- */
+@media (max-width: 639px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container,
+    section,
+    header,
+    footer,
+    main {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero,
+    .hero__media,
+    .hero__content {
+        max-width: 100%;
+    }
+
+    .hero__content {
+        width: 100%;
+    }
+
+    .signature__inner,
+    .about__inner,
+    .booking__inner,
+    .location__inner {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .services__grid,
+    .gallery__grid,
+    .why__grid,
+    .pricing__grid,
+    .reviews__grid {
+        width: 100%;
+        min-width: 0;
+    }
+
+    img,
+    iframe {
+        max-width: 100%;
+    }
+}
